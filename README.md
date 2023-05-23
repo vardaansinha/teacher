@@ -1,3 +1,3 @@
 ## Build a blog site using Jekyll
-> Del Norte San Diego Computer Science blogs focused on learning Python with Jupyter Notebooks and Posts
-[Quickstart](https://docs.github.com/en/pages/quickstart)
+> This site is intended to support Del Norte San Diego Computer Science classes.  The blogs focus on learning Python with supporting Jupyter Notebooks and Markdown Posts.
+- This was created using [Pages Quickstart](https://docs.github.com/en/pages/quickstart).
