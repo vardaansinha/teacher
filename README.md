@@ -1,2 +1,2 @@
-## Build a blog site using GitHub Pages and Jekyll
-> This site is intended to support Del Norte San Diego Computer Science classes.  The blogs focus on learning Python using Jupyter Notebooks and Markdown Posts.
+## Blog site using GitHub Pages and Jekyll
+> Below are the instructions to build your own Jekyll Site from this template.
