@@ -2,6 +2,7 @@
 layout: default
 title: Schedule
 ---
+# Schedule
 
 <!-- posts and pages used as sources -->
 {% assign all = null | compact %}
