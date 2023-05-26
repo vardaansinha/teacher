@@ -1,7 +1,7 @@
 ---
 toc: true
 comments: true
-layout: default
+layout: post
 title: Tools and Equipment
 description: Tools and equipment have changed lives, look at the mobile phone.  Tools, equipment, with the addition of coding can make you immensely more successful in any field.
 image: /images/tools.webp
@@ -11,7 +11,7 @@ type: pbl
 week: 0
 ---
 
-## Tools and Equipment make Development Easy
+## Make Development Easy
 Learning Development tools, working with Projects, is the key to a <mark>rapid entry into Code/Code/Coding</mark>.  A Computer, Git, and an Code Editor are the starting points for coding.  Add Jupyter Notebooks (computational documents) and you bridge Computer with Data Science.  The beauty of Jupyter is that it creates a computational narrative, a document that allows code and data with visual analysis, hypothesis, and conjecture.
 - Computers using either MacOS, Windows, or Linux are requirements for the course.  
 - <mark>GitHub</mark>, is Git hosted in the Cloud.  It is <mark>the defacto hosting platform for version control and collaboration</mark>. It lets you and others work together on projects from anywhere in the world.  Think of it as the Google Docs for Coders.
