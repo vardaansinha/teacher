@@ -2,7 +2,7 @@
 layout: default
 title: CSA Schedule
 ---
-# CSA Schedule
+# Computer Science 'A" Schedule
 
 <!-- posts and pages used as sources -->
 {% assign all = null | compact %}
