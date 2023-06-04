@@ -5,10 +5,9 @@ layout: post
 title: Tools and Equipment
 description: Tools and equipment have changed lives, look at the mobile phone.  Tools, equipment, with the addition of coding can make you immensely more successful in any field.
 image: /images/tools.webp
-permalink: /techtalk/tools
+courses: { csse: {week: 0}, csp: {week: 0}, csa: {week: 0} }
 categories: [C4.3, C5.0]
 type: pbl
-week: 0
 ---
 
 ## Make Development Easy
