@@ -7,7 +7,7 @@ description: Tools and equipment have changed lives, look at the mobile phone.  
 image: /images/tools.webp
 courses: { csse: {week: 0}, csp: {week: 0}, csa: {week: 0} }
 categories: [C4.3, C5.0]
-type: pbl
+type: devops
 ---
 
 ## Make Development Easy
