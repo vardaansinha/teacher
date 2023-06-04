@@ -5,10 +5,15 @@ title: Course Outlines
 
 ## Investing in your Technical Future
 > Explore the Pathway in Computer Science at Del Norte High School.  In the pathway you will be working on Projects, and Collaborating with Peers.  All the Del Norte CompSci classes are designed toward a "Real World" experience.  Class time includes tech talks (lectures), collaboration with peers, communication with teacher(s), critical thinking while coding, and creativity in projects.  Total work time is 5 to 7 hours of work per week, 5 hours in class and 2 hours of technical work outside of class.  Grading is focused on time invested, participation with peers, and engagement in learning. 
+- Teacher introduces concepts and requirements
+- Project-based learning with Teacher supports
+- Peer Communication, Collaboration
+- Coding, Crtical thinking, Creatity 
+
 ![csse]({{site.baseurl}}/images/ccr.png)
 
 ## Computer Science and Software Engineering (CSSE) 1,2; Grades 9-12 
-> CSSE prepares students for the AP Computer Science pathway. This course will teach the JavaScript programming language and develop computational thinking skills. This course generate excitement about the field of computing by learning through Game Development and fostering collaboration with Peers.  Tech Talks will be given by Teachers to introduce concepts, tools and ideas that establish requirements for development.  Through development and exploration this course aims to build students’ awareness of the tremendous workplace demand for computer and software engineering in all fields.
+> CSSE prepares students for the AP Computer Science pathway. This course will teach the JavaScript programming language and develop computational thinking skills. This course generate excitement about the field of computing by learning through Game Development and fostering collaboration with Peers.  Tech Talks will be given by Teachers to introduce concepts, guideance on tools and support on ideas that establish requirements for development.  Through development and exploration this course aims to build students’ awareness of the tremendous need and demand for computer and software engineering in all fields.
 - Prerequisites: none 
 - Meets UC/CSU G requirements 
 
@@ -34,6 +39,5 @@ title: Course Outlines
 - Prerequisites: AP Computer Science ‘A’ 1,2
 - Meets UC/CSU G requirements
 - Data Structures 1,2 receives Articulated College Credit to Mira Costa CC, requires free registration
-
 
 ![csse]({{site.baseurl}}/images/csa.png)
