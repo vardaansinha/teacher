@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Home Page
+title: Course Outlines
 ---
-# Home Page
+# Computer Science and Software Engineering
+![csse]({{site.baseurl}}/csse.png)
 
