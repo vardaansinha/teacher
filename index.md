@@ -4,7 +4,7 @@ title: Course Outlines
 ---
 
 ## Investing in your Technical Future
-> Explore the Pathway in Computer Science at Del Norte High School.  In the pathway you will be working on Projects, and Collaborating with Peers.  All the Del Norte CompSci classes are designed toward a "Real World" experience.  Class time includes tech talks (lectures), collaboration with peers, communication with teacher(s), critical thinking while coding, and creativity in projects.  Grading is focused on time invested, participation with peers, and engagement in learning. 
+> Explore the Pathway in Computer Science at Del Norte High School.  All the Del Norte CompSci classes are designed toward a "Real World" experience.  Class time includes tech talks (lectures), student participation, and work time.  Grading is focused on time invested, participation with peers, and engagement in learning. 
 - Teacher introduces concepts and requirements
 - Project-based learning with Teacher supports
 - Peer Communication, Collaboration
