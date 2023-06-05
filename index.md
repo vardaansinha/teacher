@@ -4,11 +4,13 @@ title: Course Outlines
 ---
 
 ## Investing in your Technical Future
-> Explore the Pathway in Computer Science at Del Norte High School.  In the pathway you will be working on Projects, and Collaborating with Peers.  All the Del Norte CompSci classes are designed toward a "Real World" experience.  Class time includes tech talks (lectures), collaboration with peers, communication with teacher(s), critical thinking while coding, and creativity in projects.  Total work time is 5 to 7 hours of work per week, 5 hours in class and 2 hours of technical work outside of class.  Grading is focused on time invested, participation with peers, and engagement in learning. 
+> Explore the Pathway in Computer Science at Del Norte High School.  In the pathway you will be working on Projects, and Collaborating with Peers.  All the Del Norte CompSci classes are designed toward a "Real World" experience.  Class time includes tech talks (lectures), collaboration with peers, communication with teacher(s), critical thinking while coding, and creativity in projects.  Grading is focused on time invested, participation with peers, and engagement in learning. 
 - Teacher introduces concepts and requirements
 - Project-based learning with Teacher supports
 - Peer Communication, Collaboration
-- Coding, Crtical thinking, Creatity 
+- Coding, Developer Operations, Crtical thinking
+- Creatity, Research, ChatGPT
+- Class work plus 2-3 hours homework per week
 
 ![csse]({{site.baseurl}}/images/ccr.png)
 
