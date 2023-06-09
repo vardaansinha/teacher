@@ -3,7 +3,7 @@ toc: true
 layout: post
 title: Pair Programming
 description: Don't do it alone.  Pair Programming allows you to have secondary thinking as you work, not just a reflection after you are done, but real time support.
-courses: { csp: {week: 0, categories: [4.A]} }
+courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]} }
 categories: [C1.4]
 type: collab
 ---
