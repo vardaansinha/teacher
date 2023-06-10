@@ -4,7 +4,9 @@ default: server
 	@# tail and awk work together to extract Jekyll regeneration messages
 	@@(tail -f nohup.out | awk '/^ *Regenerating:/ { regenerate=1 } regenerate { if (/^[[:blank:]]*$$/) { regenerate=0 } else { print } }') 2>/dev/null &
 	@echo "Terminal logging started"  
-
+	@sleep 3
+	@# outputs startup log, removes last line ($$d) as ctl-c message is not applicable for background process
+	@@sed '$$d' nohup.out 
 
 # start the local web server
 server: stop convert
@@ -13,10 +15,7 @@ server: stop convert
 		PID=$$!; \
 		echo "Server PID: $$PID"
 	@@until [ -f nohup.out ]; do sleep 1; done
-	@sleep 2
 	@echo "Server is running"
-	@# outputs startup log, removes last line ($$d) as ctl-c message is not applicable for background process
-	@@sed '$$d' nohup.out 
 
 
 # convert nb notebooks to markdown
@@ -25,8 +24,15 @@ convert:
 	@python scripts/convert_notebooks.py
 
 
+# clean up project, to avoid issues stop is dependency
+clean: stop
+	@echo "Cleaning converted IPYNB files..."
+	@@rm -f _posts/*_IPYNB_2_.md
+	@rm -rf _site
+
+
 # stop the server and clean up the port
-stop: clean
+stop:
 	@echo "Stopping server..."
 	@# kills process running on port 4100
 	@@lsof -ti :4100 | xargs kill >/dev/null 2>&1 || true
@@ -35,7 +41,4 @@ stop: clean
 	@# removes log
 	@rm -f nohup.out
 
-# clean up converted files
-clean:
-	@echo "Cleaning converted IPYNB files..."
-	@@rm -f _posts/*_IPYNB_2_.md
+

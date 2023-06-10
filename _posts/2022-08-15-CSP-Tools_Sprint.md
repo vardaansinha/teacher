@@ -16,7 +16,7 @@ Learning outcome.  Getting adapted to the Agile mindset used in Computer Science
 - Friday - Start with Pair Share coding. Spend 25 minutes at keyboard finishing installation and performing GitHub pages coding, while Pair Share observes and consults.  Next 25 minutes Pairs reverse roles.
 
 
-### Hacks
+### Hack Prepartation
 > Look for 'hacks' to know what to do.  Try to be done with these things and get things working on your machine before Monday.
 - A laptop, that you bring to class every day with the Development Tools installed on it.
 - GitHub Account, VSCode will be used to push/pull changes. GitHub is where we store and share code in the cloud, think of Google Docs but for Code.
@@ -25,4 +25,10 @@ Learning outcome.  Getting adapted to the Agile mindset used in Computer Science
 - Slack Account, install App on Laptop, get used to reading announcements. Slack is the tool will use for messaging, we have been averaging 50K messages per year.
 - Python is the key language you will be using in this class.  Flask, Jinja2, HTML, CSS, JavaScript are the key supporting technicals you will be using to enhance your learning.
 - VSCode is the code editor we will be using in this class.  VSCode is more than and editor, this type of tool is often called an Interactive Development Environment (IDE). 
-- AWS is used for deployment, an AWS account will be provided by Teacher.  AWS Cloud Computing and Servers will be used to Deploy and Support projects on the internet.
+
+## Hacks
+Students need to demonstrate all these tools running to Scrum Team and then the Teacher.  Problems need to be worked out quickly.  Before asking Teacher ask 3 other students.  <mark>Do not delay in Tool Setup task, there will be no late makeup for points!!!</mark>  Tool and Equipment setup is like attendance, without Tools and Equipment you are effectually absent.
+- Share link to personal GitHub pages running on github.io.  My suggestion is to change index.html to show it is really yours.
+- Share link to a new page (_posts) in your Fastpages project show use of  Markdown and/or HTML fragments.  You will need to learn special date requirements of a file as well as a little Markdown or HTML.
+- Capture image/screen capture of GitHub Pages project showing use of an Integrated Development Environment (VS Studio)
+- Share link showing your GitHub insights.  This is your personal activity of commit history.
