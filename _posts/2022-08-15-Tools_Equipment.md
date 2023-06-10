@@ -11,43 +11,40 @@ type: devops
 ---
 
 ## Make Development Easy
-Learning Development tools, working with Projects, is the key to a <mark>rapid entry into Code/Code/Coding</mark>.  A Computer, Git, and an Code Editor are the starting points for coding.  Add Jupyter Notebooks (computational documents) and you bridge Computer with Data Science.  The beauty of Jupyter is that it creates a computational narrative, a document that allows code and data with visual analysis, hypothesis, and conjecture.
+Learning Development tools, working with Projects, is the key to a <mark>rapid entry into Code/Code/Coding</mark>.  A Computer, Git, and an Code Editor are the starting points for coding.  Add Jupyter Notebooks (computational documents) and you bridge a Computer with Data Science.  The beauty of Jupyter Notebooks is that it creates a computational narrative, a document that allows code and data with visual analysis, hypothesis, and conjecture.
 - Computers using either MacOS, Windows, or Linux are requirements for the course.  
 - <mark>GitHub</mark>, is Git hosted in the Cloud.  It is <mark>the defacto hosting platform for version control and collaboration</mark>. It lets you and others work together on projects from anywhere in the world.  Think of it as the Google Docs for Coders.
    - Version Control is the task of keeping a software system of many versions and configurations well organized.
    - <mark>Version Control History</mark> of files and changes in Version Control System (ie GitHub) is very important!  Ultimately, any Coder will break things or delete things! Looking at older versions and configurations at a microscopic detail is sometimes the only way to unwind bugs.
-- <mark>Visual Studio Code</mark> (abbreviations VS Code, VSCode or VSC) is a powerful Code Editor.  VSCode performs a lot of magic and automation behind the scenes to make your Code/Code/Coding life easier.  There is a back-in-the-day story hear, but short version is VSCode qualifies, IMO, to be called and <mark>Integrated Development Environment (IDE)</mark>.  It allows you to Edit files, Build your Code, and Pull/Push Code from and to the GitHub.  FYI, VSCode is new to APCS this year, the former IDE's used in CompSci classes include XCode, Eclipse, and IntelliJ.
-- <mark>Jupyter Documents (.ipynb)</mark> is a document format for creating and sharing computational documents.  These documents allow you to compute segments of Python or Java code as you are taking notes.  These are new to AP CS this year, but are viewed as very powerful in gaining a quick understanding of coding concepts.  Jupyter documents are often called "notebooks".
+- <mark>Visual Studio Code</mark> (abbreviations VS Code, VSCode or VSC) is a powerful Code Editor.  VSCode performs a lot of magic and automation behind the scenes to make your Code/Code/Coding life easier.  There is a back-in-the-day story hear, but short version is VSCode qualifies, IMO, to be called and <mark>Integrated Development Environment (IDE)</mark>.  It allows you to Edit files, Build your Code, and Pull/Push Code from and to the GitHub.  FYI, VSCode is an IDE of choice by the instructor, in CompSci classes in the past we have used XCode, Eclipse, and IntelliJ.
+- <mark>Jupyter Documents (.ipynb)</mark> is a document format for creating and sharing computational information.  These documents allow you to compute segments of Python, JavaScript or Java code as you are taking notes.  IMO, these documents are very powerful to gain a quick understanding of coding concepts.  Jupyter documents are often called "notebooks".
 
 
 ### Equipment, accounts and tools
-- A laptop, <mark>bring a laptop to class every day with the Development Tools installed</mark> on it.  Computers issued by the School, ie Chromebook, are not effective because of the restrictions placed on adding software by PUSD.  <mark>If you have any problems obtaining a Computer where you can install software!, please attend Office Hours immediately</mark>
-- GitHub Account, VSCode will be used to clone/push/pull changes. GitHub is where we store and share code in the cloud, think of Google Docs but for Code.
+- A laptop, <mark>bring a laptop to class every day with the Development Tools installed</mark> on it.  Preferred lapytos ar MacOS or Windows.   Computers issued by the School, ie Chromebook, are not as effective because of the restrictions placed on adding software by PUSD.  <mark>If you only have access to a school issued Chromeboo, we will provide an option to access a Linux machine on AWS.</mark>
+- GitHub Account, VSCode will be used to clone/push/pull changes. GitHub is where we store and share code in the cloud, think of Google Docs but for Code.  Setup GitHub with a personal ID, not a school ID.
 - GitHub Pages will be used to host your personal web site, notes, and experiences. <mark>Review GitHub concepts 2-min</mark> [https://www.youtube.com/watch?v=phGdqJB6ep0](https://www.youtube.com/watch?v=phGdqJB6ep0)
 - Jupyter Documents will be used in conjunction with GitHub Pages to build running Java Code in to your Technical Notes. <mark>Review Jupyter basics 6-min</mark> [https://www.youtube.com/watch?v=3jZYC9rGrNg](https://www.youtube.com/watch?v=3jZYC9rGrNg)
-- Slack Account, install App on Laptop, get used to reading announcements. Slack is a messaging tool similar to Discord, the first year we had 35,000 message in a class.
-- Python is the key language you will be using in this class.  Flask, Jinja2, HTML, CSS, JavaScript are the key supporting technicals you will be using to enhance your learning of coding.
+- Slack Account, install App on Laptop, get used to reading announcements. Slack is a messaging tool similar to Discord, there will be daily messages in this class.
 - VSCode is the code editor we will be using in this class.  VSCode is more than and editor, it is called and Interactive Development Environment (IDE). 
-- Anaconda is the environment manager.  Conda is an open-source package and environment management system that runs on Windows, macOS, and Linux.
-- Homebrew for MacOS installs packages (Java, Python) you need for Development that Apple did not include.
-- Apt for WSL Ubuntu installs the packages (Java, Python) you need for Development that Ubuntu did not include.
-- AWS Account for cloud computing and deployment, account access will be provided by Teacher.  AWS Cloud Computing and Electric Cloud Computing (EC2's) will be used to Deploy and Support projects on the Internet.
+- Tools and Terminal Installs
+   - Anaconda is the environment manager.  Conda is an open-source package and environment management system that runs on Windows, macOS, and Linux.  It helps you manage you tools in a controlled environment.
+   - Homebrew (```brew install```) for MacOS will be used to install tools,  Apple's MacOS does not have these by default.
+   - On Windows we will install Windows Subystem for Linux (WSL Ubuntu), then use ```sudo apt install` installs the packages (Java, Python) you need for Development that Ubuntu did not include.
+   - On Linux machines we will use ```sudo apt install``` for tools installation. An AWS Account for cloud computing will be required.  , account access will be provided by Teacher.  AWS Cloud Computing and Electric Cloud Computing (EC2's) will be used to run Development Enviornment from the Internet.
 
 ### GitHub Account
 - Follow instruction [https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account)  Use your own personal/permanent email... NOT SCHOOL!!! GitHub belong to you.
 
 ### MacOS 1st Time Developer
-> Python2 install on MacOS
-- Install [Python2](https://www.python.org/ftp/python/2.7.18/python-2.7.18-macosx10.9.pkg)
-
-> VSCode install on MacOS.  
+> VSCode install
 - Install [VSCode](https://code.visualstudio.com/docs/setup/mac)
 
-> Anaconda install on MacOS.
+> Anaconda install
 - Download for MacOS: [Anaconda](https://www.anaconda.com/products/distribution)
 - Run Install: Answer yes to questions
 
-> Homebrew install on MacOS
+> Homebrew install
 - Copy and Paste to Install from Terminal [Homebrew](https://brew.sh)
     - Copy ```bash ... curl ...```  command using copy box on website
     - Launch ```terminal``` from search bar
@@ -55,8 +52,8 @@ Learning Development tools, working with Projects, is the key to a <mark>rapid e
     - Make sure command starts, this should provide feedback/output in terminal and could take a long time, like 10-min, there could be a  prompt in the middle, at about 5-minutes.  Follow any on screen instructions provided in terminal output to finish.
 - Homebrew installs a tool called "brew" which helps add and manage developer packages on MacOS.
 
-> At this point, the next task is to prepare for Jupyter Notebooks and Kernels.  <mark>You must start a new Terminal</mark>.  Now the Terminal prompt should be <mark>prefixed with (base)</mark>.  If not, you need to go back to Anaconda install.
-- Open new Terminal.  If your prompt is not looking like this you need to back up.
+> At this point, the next task is to prepare tools.  <mark>You must start a new Terminal</mark>.  Now the Terminal prompt should be <mark>prefixed with (base)</mark>.  If not, you need to go back to Anaconda install.
+- Open new Terminal, your prompt should look like this...
 ```bash
 (base) iMac:~ jmort1021$
 ```
@@ -70,7 +67,6 @@ $ brew upgrade # upgrade packages
 $ brew install git  # install latest git
 $ brew install python # install python3 for development
 $ python --version # version of python3 installed
-$ brew install java # openjdk install
 ```
 
 ### Windows 1st Time Developer
@@ -80,14 +76,14 @@ $ brew install java # openjdk install
 
 > Anaconda install on WSL.
 - Try the exact commands in WSL Command / Powershell.  
-- Only if there is a wget error... To find the latest Linux-x86 distribution scroll to the bottom of this page: https://www.anaconda.com/products/distribution.  Change wget and Anaconda3 command based on new link.
+- Only if there is a wget error... To find the latest Linux-x86 distribution hover over ```64-Bit (x86) Installer``` of this page: https://www.anaconda.com/download#downloads.  Hover over  wget and Anaconda3 commands based on new link.
 ```bash
 > PS C:\Users\UserName> wsl  # Windows prompt to WSL command
 $ cd /tmp
-$ wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
-$ chmod +x Anaconda3-2022.05-Linux-x86_64.sh
+$ wget https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh
+$ chmod +x Anaconda3-2023.03-1-Linux-x86_64.sh
 # Answer yes to all the prompts
-$ ./Anaconda3-2022.05-Linux-x86_64.sh
+$ ./Anaconda3-2023.03-1-Linux-x86_64.sh
 ```
 
 > At this point, the next task is to prepare for Packages, Jupyter Notebooks, and Kernels.  <mark>You must start a new WSL Command / Powershell</mark>.  Now the WSL prompt should be <mark>prefixed with (base)</mark> from Anaconda install.  If not, you need to go back to Anaconda install.
@@ -104,18 +100,13 @@ $ ./Anaconda3-2022.05-Linux-x86_64.sh
 $ sudo apt list # list packages
 $ sudo apt update # update package list
 $ sudo apt upgrade # upgrade packages
-$ sudo apt install python2 # install python2 for package dependencies
 $ sudo apt install python3 python3-pip # install python3 and pip3 for development
 $ python --version  # version of python3 should be shown
-$ sudo apt install default-jdk default-jre  # java install
-$ java --version  # java runtime version
-$ javac --version # java compiler version
-$ sudo apt install unzip  # unzip utility
-```
+
 
 ### Jupyter Install and Kernels (MacOs and WSL)
 
-> Install Jupyter and check kernels 
+> Install Jupyter and check python kernel 
 ```bash
 (base) id:~$ conda --version 
 (base) id:~$ conda install jupyter # install jupyter
@@ -124,39 +115,7 @@ Available kernels:
   python3    /home/shay/.local/share/jupyter/kernels/python3
 ```
 
-> Install Bash kernel.
-```bash
-(base) id:~$ # start in home directory
-(base) id:~$ pip install bash_kernel # download bash kernel
-Collecting bash_kernel
-  Downloading bash_kernel-0.7.2-py2.py3-none-any.whl (15 kB)
-Requirement already satisfied: pexpect>=4.0 in ./anaconda3/lib/python3.9/site-packages (from bash_kernel) (4.8.0)
-Requirement already satisfied: ptyprocess>=0.5 in ./anaconda3/lib/python3.9/site-packages (from pexpect>=4.0->bash_kernel) (0.7.0)
-Installing collected packages: bash-kernel
-Successfully installed bash-kernel-0.7.2
-(base) id:~$ python -m bash_kernel.install # install kernel
-Installing IPython kernel spec
-(base) id:~$ jupyter kernelspec list # list kernels
-Available kernels:
-  bash       /home/shay/.local/share/jupyter/kernels/bash
-  python3    /home/shay/.local/share/jupyter/kernels/python3
-```
-
-> Install JavaScript kernel. Output not shown, answer y or yes to questions.
-```bash
-(base) id:~$ conda install nodejs # node is framework for JavaScript kernel
-(base) id:~$ npm -version  # node package manager comes with nodejs
-(base) id:~$ npm install -g ijavascript  # get the kernel
-(base) id:~$ ijsinstall # install javascript kernel
-(base) id:~$ jupyter kernelspec list # list kernels
-Available kernels:
-  bash          /home/shay/.local/share/jupyter/kernels/bash
-  javascript    /home/shay/.local/share/jupyter/kernels/javascript
-  python3       /home/shay/.local/share/jupyter/kernels/python3
-```
-
-
-### VSCode Fastpages Project
+### VSCode Start GitHub Project
 > Start Pages/Fastpages from [GitHub Setup Instructions](https://github.com/fastai/fastpages#setup-instructions)
 - [Recommended Video - 27 minutes](https://www.youtube.com/watch?v=sepml4GLLSM)
 - Verify GitHub pages is running
@@ -164,7 +123,7 @@ Available kernels:
 ```bash
 (base) id:~$ mkdir -p vscode # make a vscode directory
 (base) id:~$ cd vscode # change to the directory
-(base) id:~$ git clone https://github.com/nighthawkcoders/APCSP.git # change to your repo
+(base) id:~$ git clone https://github.com/nighthawkcoders/pages.git # change to your repo
 (base) id:~$ code . # open VSCode projects in directory
 ```
 - Push a minor "markdown" change and Verify on GitHub [https://code.visualstudio.com/docs/editor/versioncontrol#_git-support](https://code.visualstudio.com/docs/editor/versioncontrol#_git-support)
