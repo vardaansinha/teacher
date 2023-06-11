@@ -85,17 +85,17 @@ Load all posts
   <!-- organizing blogs by type -->
   {%endcomment%}
           {% if post.type == "ccc" %}
-              {% assign ccc = ccc | push: title %}
-              {% assign ccc = ccc | push: url %}  
+              {% assign ccc = ccc | unshift: title %}
+              {% assign ccc = ccc | unshift: url %}  
           {% elsif post.type == "devops" %}
-              {% assign devops = devops | push: title %}
-              {% assign devops = devops | push: url %} 
+              {% assign devops = devops | unshift: title %}
+              {% assign devops = devops | unshift: url %} 
           {% elsif post.type == "collab" %}
-              {% assign collab = collab | push: title %}
-              {% assign collab = collab | push: url %} 
+              {% assign collab = collab | unshift: title %}
+              {% assign collab = collab | unshift: url %} 
           {% else %}
-              {% assign uk = uk | push: title %}
-              {% assign uk = uk | push: url %}     
+              {% assign uk = uk | unshift: title %}
+              {% assign uk = uk | unshift: url %}     
           {% endif %}
 
         {% endif %}
@@ -121,7 +121,7 @@ Load all posts
   <td>
       {% assign units = units | shift %} <!-- remove delimiter -->
     {% else %} <!-- make a link in the column -->
-      - <a href="{{site.baseurl}}/{{units[1]}}">{{units[0]}}</a> <br/> 
+      - <a href="{{site.baseurl}}/{{units[0]}}">{{units[1]}}</a> <br/> 
       {% assign units = units | shift | shift %} <!-- remove title and url -->
     {% endif %}
   {% endfor %}
