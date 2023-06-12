@@ -1,5 +1,6 @@
 ## Blog site using GitHub Pages and Jekyll
-> This site is intended for Teachers.   This is to build lessons and distribute across different sections (CSSE, CSP, CSA).
+> This site is intended for Teachers.  
+- This is to build lessons and distribute across different sections (CSSE, CSP, CSA).
 - Section are Computer Science Pathway over 3 years of High School Instruction.
 - The primary languages are JavaScript/HTML/CSS, Python/Flask, Java/Spring.  
 - The focus of instruction is Full Stack Web Development.  This is used as it provides a variety of technologies and exposures.
