@@ -1,12 +1,14 @@
 # default call server and starts logging
 default: server
-	@echo "Terminal logging starting..."  
+	@echo "Terminal logging starting..."
 	@# tail and awk work together to extract Jekyll regeneration messages
-	@@(tail -f /tmp/jekyll.log | awk '/^ *Regenerating:/ { regenerate=1 } regenerate { if (/^[[:blank:]]*$$/) { regenerate=0 } else { print } }') 2>/dev/null &
-	@echo "Terminal logging started"  
-	@sleep 3
+	@@(tail -f /tmp/jekyll.log | awk '/Server address: http:\/\/0.0.0.0:4100\/teacher\// { serverReady=1 } serverReady && /^ *Regenerating:/ { regenerate=1 } regenerate { if (/^[[:blank:]]*$$/) { regenerate=0 } else { print } }') 2>/dev/null &
+	@echo "Terminal logging started"
+	@# wait for Server address to appear log
+	@@until grep -q "Server address:" /tmp/jekyll.log; do sleep 1; done
+	@echo "Server is running"
 	@# outputs startup log, removes last line ($$d) as ctl-c message is not applicable for background process
-	@@sed '$$d' /tmp/jekyll.log 
+	@@sed '$$d' /tmp/jekyll.log
 
 # start the local web server
 server: stop convert
