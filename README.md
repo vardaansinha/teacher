@@ -5,8 +5,39 @@
 - All course material works off of Notebooks using Python kernel, except Java which requires it own kernel.
 
 ## Preview Site 
-> GitHub Pages development is optimized by testing and developing on your local machine.  This is called previewing you work, prior to commit and push. 
-- GitHub setup for, [Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll).  After requirements are met for Jekyll and Ruby you need to install requirements for project.
+> GitHub Pages development is optimized by testing and developing on your local machine.  This is called previewing you work, prior to commit and push.
+
+- Install for Ubuntu using apt
+```bash
+# ruby
+sudo apt install ruby-full build-essential zlib1g-dev
+# avoid root user, set up a gem installation directory for your user account
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+# install jekyll and bundler
+gem install jekyll bundler
+```
+- Install for MacOS using brew
+```bash
+# ruby
+brew install chruby ruby-install xz
+ruby-install ruby 3.1.3
+# configure ruby into shell .zshrc or change to .bash_profile
+echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
+echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
+echo "chruby ruby-3.1.3" >> ~/.zshrc # run 'chruby' to see actual version
+#
+# quit and relaunch terminal
+#
+# install jekyll
+gem install jekyll
+```
+
+
+
+
 ```bash
 bundle install
 ```
