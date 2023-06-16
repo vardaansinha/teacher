@@ -33,16 +33,62 @@ You will want to create a Github Pages blog for this class. This is a place wher
 
 # Running Github Pages locally
 
-To see your blog update locally as you edit, follow the steps below:
+You can run your Github Pages blog locally. This means that when you will be able to see your website update as you edit your code through a URL that starts with http://localhost. This is helpful because you can test locally to see if your code works, and push error-free code to your repository.
 
-1. Open your terminal in VS Code with <code>Ctrl + `</code>
+# Steps
 
-2. Type `bundle install`
+You can also view the steps in the student repository's [README](https://github.com/nighthawkcoders/student/blob/main/README.md)
 
-3. Type `make`. Then, go to the link provided in the output:
+If using Windows, run the following commands in WSL (check out the comments if you're interested in what the commands do):
+
+```bash
+# install Ruby 
+# apt install installs packages for Ubuntu
+sudo apt install ruby-full build-essential zlib1g-dev
+# avoid root user, set up a gem installation directory for your user account
+# the following "echo" commands adds the installation directory into the .bashrc file
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+# run the .bashrc file so that WSL knows the installation directory
+source ~/.bashrc
+# install jekyll and bundler
+gem install jekyll bundler
+```
+
+
+<br>
+
+If using MacOS, run the following commands in the terminal:
+
+```bash
+# ruby
+brew install chruby ruby-install xz
+ruby-install ruby 3.1.3
+# configure ruby into shell .zshrc or change to .bash_profile
+echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
+echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
+echo "chruby ruby-3.1.3" >> ~/.zshrc # run 'chruby' to see actual version
+#
+# quit and relaunch terminal
+#
+# install jekyll
+gem install jekyll
+```
+
+
+1. Open your terminal in VS Code through View -> Terminal. Alternatively, the shortcut <code>Ctrl + `</code> can be used. (You can also run the commands in WSL, but opening up VS Code's terminal in your student repository ensures you are in the correct directory.)
+
+2. Type `bundle install`. This command installs the dependencies in your Gemfile.
+
+3. Type `make`. This compiles the program.
+
+4. Go to the localhost link provided in the output:
     ![]({{ site.baseurl }}/images/output.jpg)
 
 Now, whenever the blog is edited in VS Code, the local website will show the changes upon refresh. 
+
+Please note that these changes are only stored locally on your computer until you commit the changes. If you go to your actual blog on the web (https://<your username>.github.io/student), you will notice that the changes are not reflected there. To ensure that the actual website updates, you will need to commit your changes to your Github repository. 
 
 <br>
 
