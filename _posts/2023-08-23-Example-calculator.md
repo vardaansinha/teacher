@@ -21,13 +21,11 @@ HTML implementation of the calculator.
 
 {% include nav_home.html %}
 
-<!-- Style implementation for calculator
-    Style and Events are aligned with calculator-* class definition
-    style.css contains majority of style (number, operation, clear, and equals)
-    - The div calculator-container sets 4 elements to a row, see cusstome-styles.sccs
-    - All of the calulator-* classes extend .button
-    The calculator-output style is defined on this page
-    - Most calculator-* events/actions result in calculator-output.innerHTML change
+<!-- 
+    Style and Action are aligned with HRML class definitions
+    style.css contains majority of style definition (number, operation, clear, and equals)
+    - The div calculator-container sets 4 elements to a row
+    Background is credited to Vanta JS and is implemented at bottom of this page
 -->
 <style>
   .calculator-output {
@@ -189,7 +187,9 @@ function clearCalc () { // clears calculator
 }
 </script>
 
-<!-- Flying birds just for fun -->
+<!-- 
+Vanta animations just for fun, load JS onto the page
+-->
 <script src="/teacher/assets/js/three.r119.min.js"></script>
 <script src="/teacher/assets/js/vanta.halo.min.js"></script>
 <script src="/teacher/assets/js/vanta.birds.min.js"></script>
@@ -197,25 +197,24 @@ function clearCalc () { // clears calculator
 <script src="/teacher/assets/js/vanta.rings.min.js"></script>
 
 <script>
-  var vantaOptions = ["halo", "birds", "net", "rings"];
-  var vantaAnimation = vantaOptions[Math.floor(Math.random() * vantaOptions.length)];
+// Setup Vanta function calls corresponding to page loaded JS
+var vantaInstances = {
+  halo: VANTA.HALO,
+  birds: VANTA.BIRDS,
+  net: VANTA.NET,
+  rings: VANTA.RINGS
+};
 
-  var vantaInstances = {
-    halo: (options) => VANTA.HALO(options),
-    birds: (options) => VANTA.BIRDS(options),
-    net: (options) => VANTA.NET(options),
-    rings: (options) => VANTA.RINGS(options)
-  };
+// Obtain a random Vanta function for this pages background
+var vantaInstance = vantaInstances[Object.keys(vantaInstances)[Math.floor(Math.random() * Object.keys(vantaInstances).length)]];
 
-  function startVantaAnimation(animation) {
-    vantaInstances[animation]({
-      el: "#animation",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false
-    });
-  }
-
-  startVantaAnimation(vantaAnimation);
+// Run the random Vanta background animation, controls on these JS script seem to be the same per Vanta docs
+vantaInstance({
+  el: "#animation",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false
+});
 </script>
+
 
