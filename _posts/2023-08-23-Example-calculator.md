@@ -197,7 +197,7 @@ Vanta animations just for fun, load JS onto the page
 <script src="/teacher/assets/js/vanta.rings.min.js"></script>
 
 <script>
-// Setup Vanta function calls corresponding to page loaded JS
+// setup vanta scripts as functions
 var vantaInstances = {
   halo: VANTA.HALO,
   birds: VANTA.BIRDS,
@@ -205,10 +205,10 @@ var vantaInstances = {
   rings: VANTA.RINGS
 };
 
-// Obtain a random Vanta function for this pages background
+// obtain a random vanta function
 var vantaInstance = vantaInstances[Object.keys(vantaInstances)[Math.floor(Math.random() * Object.keys(vantaInstances).length)]];
 
-// Run the random Vanta background animation, controls on these JS script seem to be the same per Vanta docs
+// run the animation
 vantaInstance({
   el: "#animation",
   mouseControls: true,
