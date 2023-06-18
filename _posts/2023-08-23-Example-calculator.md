@@ -9,6 +9,7 @@ courses: { csse: {week: 2}, csp: {week: 0, categories: [2.C]}, csa: {week: 0} }
 ---
 
 <!-- 
+Hack 0: Right justify result
 Hack 1: Test conditions on small, big, and decimal numbers, report on findings. Fix issues.
 Hack 2: Add the common math operation that is missing from calculator
 Hack 3: Implement 1 number operation (ie SQRT) 
@@ -48,29 +49,32 @@ HTML implementation of the calculator.
   }
 </style>
 
-<div class="calculator-container">
-    <!--result-->
-    <div class="calculator-output" id="output">0</div>
-    <!--row 1-->
-    <div class="calculator-number">1</div>
-    <div class="calculator-number">2</div>
-    <div class="calculator-number">3</div>
-    <div class="calculator-operation">+</div>
-    <!--row 2-->
-    <div class="calculator-number">4</div>
-    <div class="calculator-number">5</div>
-    <div class="calculator-number">6</div>
-    <div class="calculator-operation">-</div>
-    <!--row 3-->
-    <div class="calculator-number">7</div>
-    <div class="calculator-number">8</div>
-    <div class="calculator-number">9</div>
-    <div class="calculator-operation">*</div>
-    <!--row 4-->
-    <div class="calculator-clear">A/C</div>
-    <div class="calculator-number">0</div>
-    <div class="calculator-number">.</div>
-    <div class="calculator-equals">=</div>
+<!-- Add a container for the animation -->
+<div id="animation">
+  <div class="calculator-container">
+      <!--result-->
+      <div class="calculator-output" id="output">0</div>
+      <!--row 1-->
+      <div class="calculator-number">1</div>
+      <div class="calculator-number">2</div>
+      <div class="calculator-number">3</div>
+      <div class="calculator-operation">+</div>
+      <!--row 2-->
+      <div class="calculator-number">4</div>
+      <div class="calculator-number">5</div>
+      <div class="calculator-number">6</div>
+      <div class="calculator-operation">-</div>
+      <!--row 3-->
+      <div class="calculator-number">7</div>
+      <div class="calculator-number">8</div>
+      <div class="calculator-number">9</div>
+      <div class="calculator-operation">*</div>
+      <!--row 4-->
+      <div class="calculator-clear">A/C</div>
+      <div class="calculator-number">0</div>
+      <div class="calculator-number">.</div>
+      <div class="calculator-equals">=</div>
+  </div>
 </div>
 
 <!-- JavaScript (JS) implementation of the calculator. -->
@@ -184,3 +188,34 @@ function clearCalc () { // clears calculator
     nextReady = true;
 }
 </script>
+
+<!-- Flying birds just for fun -->
+<script src="/teacher/assets/js/three.r119.min.js"></script>
+<script src="/teacher/assets/js/vanta.halo.min.js"></script>
+<script src="/teacher/assets/js/vanta.birds.min.js"></script>
+<script src="/teacher/assets/js/vanta.net.min.js"></script>
+<script src="/teacher/assets/js/vanta.rings.min.js"></script>
+
+<script>
+  var vantaOptions = ["halo", "birds", "net", "rings"];
+  var vantaAnimation = vantaOptions[Math.floor(Math.random() * vantaOptions.length)];
+
+  var vantaInstances = {
+    halo: (options) => VANTA.HALO(options),
+    birds: (options) => VANTA.BIRDS(options),
+    net: (options) => VANTA.NET(options),
+    rings: (options) => VANTA.RINGS(options)
+  };
+
+  function startVantaAnimation(animation) {
+    vantaInstances[animation]({
+      el: "#animation",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false
+    });
+  }
+
+  startVantaAnimation(vantaAnimation);
+</script>
+
