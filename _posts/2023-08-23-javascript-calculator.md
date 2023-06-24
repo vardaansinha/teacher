@@ -1,11 +1,12 @@
 ---
-title: Calculator Starters
+title: JS Calculator
 comments: true
 layout: default
 description: A common way to become familiar with a language is to build a calculator.  This calculator shows off button with actions.
 permalink: /techtalk/home_style
 categories: [C7.0]
-courses: { csse: {week: 2}, csp: {week: 0, categories: [2.C]}, csa: {week: 0} }
+courses: { csse: {week: 8}, csp: {week: 4, categories: [2.C]}, csa: {week: 0} }
+type: ccc
 ---
 
 <!-- 

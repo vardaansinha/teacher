@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Mario in Motion OOP 
+title: JS Mario using OOP 
 description: Use JavaScript without external libararies to animate Mario moving across screen, OOP style.
-courses: { csse: {week: 7}, csp: {week: 4}, csa: {week: 0} }
 categories: [C5.0, C7.0, C7.6]
-type: ccc
+permalink: /frontend/home_motion
 image: /images/mario_animation.png
+courses: { csse: {week: 8}, csp: {week: 4}, csa: {week: 0} }
+type: ccc
 ---
 
 {% assign sprite_file = site.baseurl | append: page.image %}  <!--- Liquid concatentation --->

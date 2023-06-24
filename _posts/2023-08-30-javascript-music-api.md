@@ -1,11 +1,12 @@
 ---
-title: Itunes API
+title: JS Itunes API
 comments: true
 layout: default
 description: API's are a primary source for obtaining data from the internet.  There is imformation in API's for almost any interest.
 permalink: /frontend/home_table
 categories: [C7.0]
-courses: { csse: {week: 3}, csp: {week: 0, categories: [2.C]}, csa: {week: 0} }
+courses: { csse: {week: 8}, csp: {week: 4, categories: [2.C]}, csa: {week: 0} }
+type: ccc
 ---
 
 
@@ -22,7 +23,7 @@ courses: { csse: {week: 3}, csp: {week: 0, categories: [2.C]}, csa: {week: 0} }
   <thead>
     <tr>
       <th>Artist</th>
-      <th>Collection</th>
+      <th>Track</th>
       <th>Images</th>
       <th>Preview</th>
     </tr>
@@ -84,13 +85,13 @@ courses: { csse: {week: 3}, csp: {week: 0, categories: [2.C]}, csa: {week: 0} }
             const tr = document.createElement("tr");
             // td for each column
             const artist = document.createElement("td");
-            const collection = document.createElement("td");
+            const track = document.createElement("td");
             const image = document.createElement("td");
             const preview = document.createElement("td");
 
             // data is specific to the API
             artist.innerHTML = row.artistName;
-            collection.innerHTML = row.collectionName; 
+            track.innerHTML = row.trackName; 
             // create preview image
             const img = document.createElement("img");
             img.src = row.artworkUrl100;
@@ -106,7 +107,7 @@ courses: { csse: {week: 3}, csp: {week: 0, categories: [2.C]}, csa: {week: 0} }
 
             // this builds td's into tr
             tr.appendChild(artist);
-            tr.appendChild(collection);
+            tr.appendChild(track);
             tr.appendChild(image);
             tr.appendChild(preview);
 
