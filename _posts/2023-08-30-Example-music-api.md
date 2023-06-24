@@ -11,45 +11,58 @@ courses: { csse: {week: 3}, csp: {week: 0, categories: [2.C]}, csa: {week: 0} }
 
 {% include nav_home.html %}
 
+<!-- Input box and button for filter -->
+<div>
+  <input type="text" id="filterInput" placeholder="Enter iTunes filter">
+  <button onclick="fetchData()">Search</button>
+</div>
+
 <!-- HTML table fragment for page -->
 <table>
   <thead>
-  <tr>
-    <th>Artist</th>
-    <th>Collection</th>
-    <th>Images</th>
-    <th>Preview</th>
-  </tr>
+    <tr>
+      <th>Artist</th>
+      <th>Collection</th>
+      <th>Images</th>
+      <th>Preview</th>
+    </tr>
   </thead>
   <tbody id="result">
     <!-- generated rows -->
   </tbody>
 </table>
 
-<!-- Script is layed out in a sequence (no function) and will execute when page is loaded -->
+<!-- Script is laid out in a sequence (no function) and will execute when the page is loaded -->
 <script>
   // prepare HTML result container for new output
   const resultContainer = document.getElementById("result");
 
-  // prepare fetch options
-  const url = "https://itunes.apple.com/search?term=every+breathe+you+take";
-  const headers = {
-    method: 'GET', // *GET, POST, PUT, DELETE, etc.
-    mode: 'cors', // no-cors, *cors, same-origin
-    cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
-    credentials: 'omit', // include, *same-origin, omit
-    headers: {
-      'Content-Type': 'application/json'
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    },
-  };
+  // function to fetch data based on user input
+  function fetchData() {
+    // clear previous results
+    resultContainer.innerHTML = "";
 
-  // fetch the API
-  fetch(url, headers)
-    // response is a RESTful "promise" on any successful fetch
-    .then(response => {
-      // check for response errors
-      if (response.status !== 200) {
+    // get user input
+    const filterInput = document.getElementById("filterInput");
+    const filter = filterInput.value;
+
+    // prepare fetch options
+    const url = "https://itunes.apple.com/search?term=" + encodeURIComponent(filter);
+    const headers = {
+      method: 'GET',
+      mode: 'cors',
+      cache: 'default',
+      credentials: 'omit',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    };
+
+    // fetch the API
+    fetch(url, headers)
+      .then(response => {
+        // check for response errors
+        if (response.status !== 200) {
           const errorMsg = 'Database response error: ' + response.status;
           console.log(errorMsg);
           const tr = document.createElement("tr");
@@ -58,13 +71,13 @@ courses: { csse: {week: 3}, csp: {week: 0, categories: [2.C]}, csa: {week: 0} }
           tr.appendChild(td);
           resultContainer.appendChild(tr);
           return;
-      }
-      // valid response will have json data
-      response.json().then(data => {
+        }
+        // valid response will have JSON data
+        response.json().then(data => {
           console.log(data);
 
           // Music data
-          for (const row of data.results) {
+        for (const row of data.results) {
             console.log(row);
 
             // tr for each row
@@ -100,15 +113,15 @@ courses: { csse: {week: 3}, csp: {week: 0, categories: [2.C]}, csa: {week: 0} }
             // add HTML to container
             resultContainer.appendChild(tr);
           }
+        })
       })
-  })
-  // catch fetch errors (ie ACCESS to server blocked)
-  .catch(err => {
-    console.error(err);
-    const tr = document.createElement("tr");
-    const td = document.createElement("td");
-    td.innerHTML = err;
-    tr.appendChild(td);
-    resultContainer.appendChild(tr);
-  });
+      .catch(err => {
+        console.error(err);
+        const tr = document.createElement("tr");
+        const td = document.createElement("td");
+        td.innerHTML = err;
+        tr.appendChild(td);
+        resultContainer.appendChild(tr);
+      });
+  }
 </script>
